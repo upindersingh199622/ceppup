@@ -1,0 +1,31 @@
+//Program to input a key and check that the no is equal to sum of 3 numbers
+
+#include<stdio.h>
+int main()
+{
+	int a[50],i,j,k,n,key,pos1,pos2,pos3,sum=0;
+	clrscr();
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	scanf("%d",&a[i]);
+	scanf("%d",&key);
+	for(i=;i<n;i++)
+	{
+		for(j=i+1;j<n;j++)
+		{
+			for(k=j+1;j<n;j++)
+			{
+				sum=a[i]+a[j]+a[k];
+				if(sum==key){
+					pos1=i;
+					pos2=j;
+					pos3=k;
+					break;}
+
+			}
+		}
+	}
+
+	printf("%d%d%d",pos1,pos2,pos3);
+	getch();
+}
